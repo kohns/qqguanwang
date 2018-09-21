@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ动态</title>
+    <link rel="stylesheet" href="dongtai.css" />
+    <script src="../jquery-1.9.1.js"></script>
+<body>
+
+<div id="topbar" class="topbar">
+    <div class="toppic">
+        <div class="topside">
+            <ul id="topNav" class="topNav">
+                <a href=""><img class="logoLink " src="images/imlogo.png" /></a>
+                <li><a href="">首页</a></li>
+                <li><a  href="">下载</a></li>
+                <li class="current">
+                    <a href="dongtai.html">动态</a>
+                </li>
+            </ul>
+        </div>
+        <div class="topTool">
+            <a class="barzc" href="" >注册</a>
+            <ul>
+                <li id="loginInfo">
+                    <a id="login" href="">登录</a>
+
+                    <div id="loginPenel" class="loginPenel">
+                        <span class="trg"></span>
+
+                        <div class="logindrop">
+                            <div id="nick" class="nick">Hi,飞翔的企鹅</div>
+                            <div class="lgout"><a id="lgout" href="javascript:;">[退出]</a></div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../QQanquan/qqanquan.html" >QQ安全</a></li>
+                <li><a href="" >QQ会员</a></li>
+            </ul>
+            <div class="flashData"><a id="viewOnline" href="">当前在线人数：<em id="cur_online">278,280,387</em></a></div>
+        </div>
+    </div>
+</div>
+
+<div class="crossbanenr">
+    <ul id="crossbanenr">
+        <li>
+            <a  href="">
+                <img src="images/ban.jpg" >
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div id="newscont" class="newscont">
+    <ul>
+        <li>
+            <a href="" >
+                <strong>揭秘手机 QQ 新功能：最新手势 AI 识别跟踪技术，支持画圈召唤 “任意门”</strong>
+                <span class="date">2018-06-20</span>
+                <span class="source">36Kr </span>
+                <em>“QQ-AR 穿越赛场” 玩法是基于手机 QQ 和腾讯音视频实验室联合开发的 “手势 AI 识别跟踪” 技术实现，“任意门” 玩法和 “手势 AI 识别跟踪” 技术，在行业内还是首创。</em>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="newfoot">
+    <div class="qmaps">
+        <div class="plats">
+            <h3>了解热门产品</h3>
+            <a class="plmb" href="" >QQ 手机版</a>
+            <a class="plpc"  href="" >QQ PC版</a>
+            <a class="plmac" href="" >QQ Mac版</a>
+            <a class="plpad"  href="">QQ Pad版</a>
+        </div>
+
+        <div class="map qac">
+            <h3>QQ安全</h3>
+            <ul>
+                <li><a  href="" >安全中心</a></li>
+                <li><a href="" >冻结帐号</a></li>
+                <li><a href="" >举报恶意行为</a></li>
+                <li><a href="" >恢复好友和群</a></li>
+            </ul>
+        </div>
+
+        <div class="map qfaq">
+            <h3>帮助反馈</h3>
+            <ul>
+                <li><a  href="">腾讯客服</a></li>
+                <li><a href="" >反馈问题</a></li>
+                <li><a  href="">腾讯微博</a></li>
+                <li><a  href="">新浪微博</a></li>
+            </ul>
+        </div>
+
+        <div class="map qlink">
+            <h3>友情链接</h3>
+            <ul>
+                <li><a  href="">兴趣部落</a></li>
+                <li><a  href="" >QQ群</a></li>
+                <li><a  href="">QQ音乐</a></li>
+                <li><a  href="" >QQ浏览器</a></li>
+                <li><a href="" >来电</a></li>
+            </ul>
+        </div>
+        <div class="map qlink">
+            <h3>友情链接</h3>
+            <ul>
+                <li><a  href="">腾讯视频</a></li>
+                <li><a  href="">腾讯体验中心</a></li>
+                <li><a href="" >腾讯电脑管家</a></li>
+                <li><a  href="" >企鹅FM</a></li>
+                <li><a  href="" >星钻</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 1998-2018Tencent. All Rights Reserved.</p>
+        <p>腾讯公司 版权所有</p>
+    </div>
+</div>
+<div id="overlay" class="overlay"></div>
+
+<script type="text/javascript">
+    $(function () {
+        var scrollTop = $(window).scrollTop();
+        var firstHeight = 300;
+        $(window).scroll(function () {
+            scrollTop = $(window).scrollTop();
+            if (scrollTop >= firstHeight) {
+                $("#topbar").addClass("topicfixed")
+            } else {
+                if ($("#topbar").hasClass("topicfixed")) {
+                    $("#topbar").removeClass("topicfixed")
+                }
+            }
+        })
+    });
+</script>
+
+</body>
+</html>
