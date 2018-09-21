@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="public.css">
+    <link rel="stylesheet" href="download.css">
+</head>
+
+<body>
+<div class="header scrollTop">
+    <div class="h-inner">
+        <h1 class="logo"><a href=""></a>
+        </h1>
+        <div class="nav">
+            <ul class="nav-ul">
+                <li class="nav-item"><a href="../TIMshouye/timshouye.html">首页</a></li>
+                <li class="nav-item"><a href="download.html" class="active">下载</a></li>
+                <li class="nav-item"><a href="">支持</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="d-content">
+    <div class="a-download clear">
+        <div class="down-ietm windows">
+            <div class="down-ietm-inner">
+                <div class="logo-area">
+                    <div class="itemlogo"></div>
+                </div>
+                <div class="info-area">
+                    <div class="d-item-title">Windows版</div>
+                    <div class="d-item-desc">版本2.2.8 <span class="update-time">2018-09-04</span></div>
+                    <div class="down-btn"><a href="">下载</a></div>
+                    <div class="d-item-log"><a href="">更新日志</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="down-ietm iphone">
+            <div class="down-ietm-inner">
+                <div class="logo-area">
+                    <div class="itemlogo"></div>
+                </div>
+                <div class="info-area">
+                    <div class="d-item-title">iPhone版</div>
+                    <div class="d-item-desc">版本2.2.8 <span class="update-time">2018-08-31</span></div>
+                    <div class="down-btn"><a>下载</a></div>
+                    <div class="scan">请用手机扫码下载</div>
+                    <div class="d-item-log"><a href="">更新日志</a></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="down-ietm android">
+            <div class="down-ietm-inner">
+                <div class="logo-area">
+                    <div class="itemlogo animation"></div>
+                </div>
+                <div class="info-area">
+                    <div class="d-item-title">Android版</div>
+                    <div class="d-item-desc">版本2.2.9 <span class="update-time">2018-09-11</span></div>
+                    <div class="down-btn"><a href="">下载</a></div>
+                    <div class="scan">请用手机扫码下载</div>
+                    <div class="d-item-log"><a href="">更新日志</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="macqq">
+        Mac QQ 现在已支持在线文档和日程功能，
+        <a href="">立即下载</a>。
+    </div>
+</div>
+<div class="footer d-page">
+    <p>
+        <span class="useradjest"><a href="">用户协议</a></span>
+        <span>TIM意见反馈：</span>274281820（QQ群）
+        <span style="margin-left:30px;position:relative;">
+            <i style="margin-top:-8px;width:1px;height:16px;background-color:#777;position:absolute;top:50%;left: -15px;"></i>
+            TIM在线文档反馈：</span>303702904（QQ群）</p>
+    <p class="copy-right">Copyright © 1998-2018 Tencent. All Rights Reserved. 腾讯公司 版权所有</p>
+</div>
+<script src="../jquery-1.9.1.js" ></script>
+<script>
+    $('.down-ietm').hover(function() {
+        $(this).addClass('hover');
+        $(this).find('.itemlogo').addClass('animation')
+    },
+    function() {
+        $(this).removeClass('hover');
+        $(this).find('.itemlogo').removeClass('animation')
+    });
+</script>
+</body>
+</html>
